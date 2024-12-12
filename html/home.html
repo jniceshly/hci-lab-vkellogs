@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VKellog's Home Page</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="left-navbar">
+            <a href="./home.html" class="no-underline-hover">VKellogs</a>
+        </div>
+        <div class="right-navbar">
+            <a href="./home.html">Home</a>
+            <a href="./product.html">Products</a>
+            <a href="./recipes.html">Recipes</a>
+            <a href="./about-us.html">About Us</a>
+            <a href="./contact-us.html">Contact Us</a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    <div class="banner-container">
+        <h1>Welcome to VKellogg's</h1>
+    </div>
+    <div class="page-container">
+        <div class="best-seller">
+            <h2>Best Seller Products</h2>
+            <div class="item">
+                <img src="../assets/best-seller-1.avif" alt="Product 1">
+                <div class="item-details">
+                    <h3>VKellogg's Frosted Flakes</h3>
+                    <p>The frosting makes it sparkle. The corn makes it crunch. The sweet milk makes it Gr-r-reat!</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../assets/best-seller-2.png" alt="Product 2">
+                <div class="item-details">
+                    <h3>VKellogg’s Froot Loops</h3>
+                    <p>Follow your nose to delicious bursts of fruity flavor in VKellogg's Froot Loops sweetened multi-grain breakfast cereal.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../assets/best-seller-3.avif" alt="Product 3">
+                <div class="item-details">
+                    <h3>VKellogg's Frosted Mini-Wheats</h3>
+                    <p>Frosted Mini Wheats serves up sweet, crunchy cereal crafted with layers of wheat and topped with frosting. It’s a work of art – that you eat!</p>
+                </div>
+            </div>
+            <hr class="divider">
+            <a href="./product.html" class="see-all">See all products ></a>
+        </div>
+        <div class="best-recipe">
+            <h2>Best Recipe</h2>
+            <div class="item">
+                <img src="../assets/best-recipe-1.avif" alt="Recipe 1">
+                <div class="item-details">
+                    <h3>"Fried" Ice Cream Bars</h3>
+                    <p>Top and bottom layers of crunchy cereal give this ice cream dessert the flavor of fried ice cream balls.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../assets/best-recipe-2.avif" alt="Recipe 2">
+                <div class="item-details">
+                    <h3>After School Muffins</h3>
+                    <p>Serve these muffins for an after school snack that will provide needed fiber to your kids diet.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../assets/best-recipe-3.avif" alt="Recipe 3">
+                <div class="item-details">
+                    <h3>Almond Crunch Pudding</h3>
+                    <p>Two great flavors--sweet, crunchy, orange-scented cereal and creamy, vanilla pudding--intertwine to make a fabulous dessert.</p>
+                </div>
+            </div>
+            <hr class="divider">
+            <a href="./recipes.html" class="see-all">See all recipes ></a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Final Project LAB HCI</p>
+        <p>Janice Ashley Kurniawan - 2602203794</p>
+    </div>
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+                const rightNavbar = document.querySelector('.right-navbar');
+                rightNavbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

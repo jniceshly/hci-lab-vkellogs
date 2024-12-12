@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VKellog's Products Page</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="left-navbar">
+            <a href="./home.html" class="no-underline-hover">VKellogs</a>
+        </div>
+        <div class="right-navbar">
+            <a href="./home.html">Home</a>
+            <a href="./product.html">Products</a>
+            <a href="./recipes.html">Recipes</a>
+            <a href="./about-us.html">About Us</a>
+            <a href="./contact-us.html">Contact Us</a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    <div class="first-container">
+        <h1>VKellogg's Products</h1>
+    </div>
+    <div class="page-container">
+        <h2>Kids Products</h2>
+        <div class="product-container">
+            <div class="card">
+                <img src="../assets/kids-products-1.png" alt="Kids Products 1" style="width:100%">
+                <div class="information">
+                    <h3>VKellogg's Honey Smacks</h3>
+                    <!-- <p>Description</p> -->
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/kids-products-2.avif" alt="Kids Products 2" style="width:100%">
+                <div class="information">
+                    <h3>VKellogg's Corn Pops</h3>
+                    <!-- <p>Description</p> -->
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/kids-products-3.avif" alt="Kids Products 3" style="width:100%">
+                <div class="information">
+                    <h3>VKellogg's Raisin Bran</h3>
+                    <!-- <p>Description</p> -->
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/kids-products-4.avif" alt="Kids Products 4" style="width:100%">
+                <div class="information">
+                    <h3>VKellogg's Rice Krispies</h3>
+                    <!-- <p>Description</p> -->
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/kids-products-5.avif" alt="Kids Products 5" style="width:100%">
+                <div class="information">
+                    <h3>VKellogg’s Krave</h3>
+                    <!-- <p>Description</p> -->
+                </div>
+            </div>
+        </div>
+        <h2>Adults Products</h2>
+        <div class="product-container">
+            <div class="card">
+                <img src="../assets/adults-products-1.avif" alt="Adults Products 1" style="width:100%">
+                <div class="information">
+                    <h3>VKellogg's Corn Flakes</h3>
+                    <!-- <p>Description</p> -->
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/adults-products-2.avif" alt="Adults Products 2" style="width:100%">
+                <div class="information">
+                    <h3>VKellogg's Cracklin' Oat Bran</h3>
+                    <!-- <p>Description</p> -->
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/adults-products-3.avif" alt="Adults Products 3" style="width:100%">
+                <div class="information">
+                    <h3>VKellogg's Special K</h3>
+                    <!-- <p>Description</p> -->
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/adults-products-4.avif" alt="Adults Products 4" style="width:100%">
+                <div class="information">
+                    <h3>VKellogg’s Crispix</h3>
+                    <!-- <p>Description</p> -->
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/adults-products-5.avif" alt="Adults Products 5" style="width:100%">
+                <div class="information">
+                    <h3>VKellogg's Smart Start</h3>
+                    <!-- <p>Description</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Final Project LAB HCI</p>
+        <p>Janice Ashley Kurniawan - 2602203794</p>
+    </div>
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+                const rightNavbar = document.querySelector('.right-navbar');
+                rightNavbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

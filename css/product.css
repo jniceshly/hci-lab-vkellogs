@@ -1,0 +1,87 @@
+.first-container {
+    width: 100vw;
+    height: 25vh;
+    color: #3F2305;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2EAD3;
+}
+
+.first-container h1 {
+    font-weight: 500;
+}
+
+.page-container {
+    padding: 0 3rem 5rem 3rem;
+    background-color: #F2EAD3;
+}
+
+.page-container h2 {
+    color: #3F2305;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    /* background-color: #3F2305; */
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    width: 250px;
+    border-radius: 15px;
+    background-color: rgba(245, 245, 245, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+    height: 200px;
+    padding-top: 1.5rem;
+    object-fit: contain;
+    /* border-bottom: 0.5px solid #3F2305; */
+}
+
+.information {
+   padding: 15px;
+   text-align: center;
+}
+
+.information p {
+    margin-top: 10px;
+    font-size: small;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 768px){
+    .right-navbar{
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+
+    .product-container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 200px;
+    }
+}
+
+.right-navbar.active {
+    display: flex;
+    flex-direction: column;
+}

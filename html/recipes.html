@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VKellog's Recipes Page</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/recipes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="left-navbar">
+            <a href="./home.html" class="no-underline-hover">VKellogs</a>
+        </div>
+        <div class="right-navbar">
+            <a href="./home.html">Home</a>
+            <a href="./product.html">Products</a>
+            <a href="./recipes.html">Recipes</a>
+            <a href="./about-us.html">About Us</a>
+            <a href="./contact-us.html">Contact Us</a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    <div class="first-container">
+        <h1>VKellogg's Recipes</h1>
+    </div>
+    <div class="recipe">
+        <div class="recipe-card">
+            <div class="recipe-image">
+                <img src="../assets/recipes-1.avif" alt="recipe-image">
+            </div>
+            <div class="recipe-information">
+                <h2>Almond Macaroons</h2>
+                <h3>Moist and fluffy macaroons, easy to make and great for any gathering.</h3>
+                <p>Serving Sizes: 18</p>
+                <p>Preparation Time: 75 mins</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="recipe-image">
+                <img src="../assets/recipes-2.avif" alt="recipe-image">
+            </div>
+            <div class="recipe-information">
+                <h2>Baked Apple Pancake</h2>
+                <h3>Cinnamon apples top this light, puffy pancake, made with Rice Krispies cereal.</h3>
+                <p>Serving Sizes: 6</p>
+                <p>Preparation Time: 30 mins</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="recipe-image">
+                <img src="../assets/recipes-3.avif" alt="recipe-image">
+            </div>
+            <div class="recipe-information">
+                <h2>Caramel Cashew Crunch Bars</h2>
+                <h3>For a sweet and salty snack, try these bars, which are chock-full of cashews, white chocolate chips and melted caramel in place of marshmallows.</h3>
+                <p>Serving Sizes: 24</p>
+                <p>Preparation Time: 10 mins</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="recipe-image">
+                <img src="../assets/recipes-4.webp" alt="recipe-image">
+            </div>
+            <div class="recipe-information">
+                <h2>Dip ‘n’ Roll Strawberry Treats</h2>
+                <h3>Chocolate-covered strawberries are coated in crispy crunchiness for a fun take on a classic Valentine's Day delight.</h3>
+                <p>Serving Sizes: 12</p>
+                <p>Preparation Time: 35 mins</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="recipe-image">
+                <img src="../assets/recipes-5.avif" alt="recipe-image">
+            </div>
+            <div class="recipe-information">
+                <h2>Easter Egg Rice Krispies Treats</h2>
+                <h3>Easter eggs your way—either use frosting to attach large sprinkles to the outside of these Rice Krispies Treats eggs or stir tiny multi-colored sprinkles into the cereal mixture before forming the eggs. Either way, they’ll add a sweet treat to your holiday.</h3>
+                <p>Serving Sizes: 9</p>
+                <p>Preparation Time: 40 mins</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Final Project LAB HCI</p>
+        <p>Janice Ashley Kurniawan - 2602203794</p>
+    </div>
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+                const rightNavbar = document.querySelector('.right-navbar');
+                rightNavbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.page-container {
+    display: blockflex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2EAD3;
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.information-container h2 {
+    font-weight: 400;
+}
+
+hr {
+    width: calc(0.3 * 100vw);
+    opacity: 0.8;
+}
+
+.page-container p {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+    .right-navbar{
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+
+    .page-container {
+        flex-wrap: wrap;
+    }
+}
+
+.right-navbar.active {
+    display: flex;
+    flex-direction: column;
+}

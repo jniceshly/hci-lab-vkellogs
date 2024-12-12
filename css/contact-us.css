@@ -1,0 +1,87 @@
+.page-container {
+    height: calc(0.8 * 100vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/contactus-background.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.box-container {
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    background-color: rgb(255,255,255, 0.5);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(0,0,0,0.5);
+    padding: 10px 5px 10px 5px;
+}
+
+.input::placeholder {
+    color: black;
+}
+
+.text-area {
+    background: transparent;
+    border: 1px solid rgb(0,0,0,0.8);
+    padding: 10px 5px 10px 5px;
+    font-size: small;
+}
+
+.text-area::placeholder {
+    color: black;
+}
+
+button {
+    width: 30%;
+    padding: 8px 0 8px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+.submit-button:hover {
+    color: #F2EAD3;
+    background-color: #3F2305;
+}
+
+.error {
+    font-size: small;
+    margin: 0;
+    background: transparent;
+    color: red;
+}
+
+@media only screen and (max-width: 768px){
+    .right-navbar{
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+.right-navbar.active {
+    display: flex;
+    flex-direction: column;
+}
